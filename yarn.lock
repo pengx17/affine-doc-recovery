@@ -1139,6 +1139,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.0.0
     "@typescript-eslint/parser": ^6.0.0
     "@vitejs/plugin-react": ^4.0.3
+    affine-reader: ^2.0.12
     eslint: ^8.45.0
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-react-refresh: ^0.4.3
@@ -1149,6 +1150,13 @@ __metadata:
     yjs: ^13.6.8
   languageName: unknown
   linkType: soft
+
+"affine-reader@npm:^2.0.12":
+  version: 2.0.12
+  resolution: "affine-reader@npm:2.0.12"
+  checksum: ebf4d332a86bd1049b0556a244b6bd96923c36468de246f81bea763641f961003ed8a565bda84118446cca7779b2589e56339f2b2c028a03fc45db478afc93ac
+  languageName: node
+  linkType: hard
 
 "agent-base@npm:^7.0.2, agent-base@npm:^7.1.0":
   version: 7.1.0

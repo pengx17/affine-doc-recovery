@@ -15,6 +15,7 @@
     "@blocksuite/editor": "nightly",
     "@blocksuite/global": "nightly",
     "@blocksuite/store": "nightly",
+    "affine-reader": "^2.0.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "yjs": "^13.6.8"

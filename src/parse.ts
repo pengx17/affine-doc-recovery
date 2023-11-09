@@ -1,6 +1,3 @@
-import * as Y from "yjs";
-
-
 import csvRaw from "./raw/affine_cloud_public_snapshots.csv?raw";
 
 const headers = [
@@ -15,7 +12,6 @@ type Row = {
   [key in (typeof headers)[number]]: string;
 } & {
   binary: Uint8Array;
-  doc: Y.Doc;
 };
 
 function parseCSV(csv: string) {
@@ -29,8 +25,6 @@ function parseCSV(csv: string) {
         rowObject[header] = values[index];
         if (header === "hexString") {
           rowObject.binary = binaryStringToBuffer(values[index]);
-          rowObject.doc = new Y.Doc();
-          Y.applyUpdate(rowObject.doc, rowObject.binary);
         }
       });
       return rowObject;
@@ -78,3 +72,5 @@ console.log(data, map, root);
 window.data = data;
 window.map = map;
 window.root = root;
+
+export { data, map, root };

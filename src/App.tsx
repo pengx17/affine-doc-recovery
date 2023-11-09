@@ -1,6 +1,6 @@
 import "./App.css";
 
-import "./parse";
+import "./doc";
 
 function App() {
   return <>hi</>;
